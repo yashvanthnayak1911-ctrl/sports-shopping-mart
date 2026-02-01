@@ -16,11 +16,12 @@ services:
         sync: false
       - key: STRIPE_SECRET_KEY
         sync: false
-    autoDeploy: false
+    autoDeploy: true
 
   - type: web
     name: sports-ecommerce-frontend
     env: static
+    autoDeploy: true
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
     envVars:
