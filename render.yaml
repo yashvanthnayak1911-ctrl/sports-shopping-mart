@@ -11,11 +11,11 @@ services:
       - key: PORT
         value: 10000
       - key: MONGODB_URI
-        sync: false
+        value: mongodb+srv://Yashh-projects:yashvanth%40191104@cluster0.u27e8qb.mongodb.net/sports-ecommerce?retryWrites=true&w=majority
       - key: JWT_SECRET
-        sync: false
+        value: sports_ecommerce_secret_key_2026
       - key: STRIPE_SECRET_KEY
-        sync: false
+        value: your_stripe_secret_key_here
     autoDeploy: true
 
   - type: web
