@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Toast from './components/Toast';
+import ProductList from './pages/ProductList';
+import ProductDetails from './pages/ProductDetails';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import AdminPanel from './pages/AdminPanel';
+import Checkout from './pages/Checkout';
+import Orders from './pages/Orders';
+
+function App() {
+  const [cart, setCart] = useState([]);
+  const [user, setUser] = useState(localStorage.getItem('token') ? true : false);
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+
+  const addToCart = (product, quantity = 1) => {
+    const existingItem = cart.find(item => item._id === product._id);
+    if (existingItem) {
+      setCart(cart.map(item =>
+        item._id === product._id
+          ? { ...item, quantity: item.quantity + quantity }
+          : item
+      ));
+    } else {
+      setCart([...cart, { ...product, quantity }]);
+    }
+    // Show toast notification
+    setToastMessage(`${quantity} × ${product.name} added to cart!`);
+    setShowToast(true);
+  };
+
+  const removeFromCart = (productId) => {
+    setCart(cart.filter(item => item._id !== productId));
+  };
+
+  return (
+    <Router>
+      <Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
+      <Toast
+        message={toastMessage}
+        show={showToast}
+        onClose={() => setShowToast(false)}
+      />
+      <Routes>
+        <Route path="/" element={<ProductList addToCart={addToCart} />} />
+        <Route path="/category/:category" element={<ProductList addToCart={addToCart} />} />
+        <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />
+        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/register" element={<Register setUser={setUser} />} />
+        <Route path="/admin" element={<AdminPanel user={user} />} />
+        <Route path="/checkout" element={<Checkout cart={cart} user={user} setCart={setCart} />} />
+        <Route path="/orders" element={<Orders />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
