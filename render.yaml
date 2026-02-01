@@ -12,7 +12,7 @@ services:
         value: 10000
     autoDeploy: false
 
-  - type: static
+  - type: web
     name: sports-ecommerce-frontend
     env: static
     buildCommand: cd frontend && npm install && npm run build
