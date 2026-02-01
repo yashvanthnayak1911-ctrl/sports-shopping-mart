@@ -96,3 +96,13 @@
 2026-02-01T09:45:51.185Z Keep-alive ping successful to http://localhost:5000: 2026-02-01T09:45:51.184Z
 2026-02-01T09:59:51.191Z Keep-alive ping successful to http://localhost:5000: 2026-02-01T09:59:51.190Z
 2026-02-01T10:13:51.193Z Keep-alive ping successful to http://localhost:5000: 2026-02-01T10:13:51.192Z
+2026-02-01T16:24:05.324Z Server running on port 5000
+2026-02-01T16:24:05.324Z Access from other devices: http://192.168.1.8:5000
+2026-02-01T16:24:05.325Z Keep-alive mechanism initialized (14 min interval)
+2026-02-01T16:24:05.327Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
