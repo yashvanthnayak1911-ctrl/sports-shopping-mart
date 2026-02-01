@@ -6,7 +6,12 @@ const hostname = window.location.hostname;
 // Assume backend is on port 5000 if running locally
 const backendUrl = hostname === 'localhost' ? 'http://localhost:5000' : `http://${hostname}:5000`;
 
-axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL || backendUrl;
+// If env var is just a hostname (from Render), prepend https://
+let apiBase = process.env.REACT_APP_API_BASE_URL || backendUrl;
+if (apiBase && !apiBase.startsWith('http')) {
+  apiBase = `https://${apiBase}`;
+}
+axios.defaults.baseURL = apiBase;
 
 // Add request interceptor to log requests and add auth token
 axios.interceptors.request.use(
