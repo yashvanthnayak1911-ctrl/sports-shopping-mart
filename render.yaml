@@ -11,3 +11,15 @@ services:
       - key: PORT
         value: 10000
     autoDeploy: false
+
+  - type: static
+    name: sports-ecommerce-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        fromService:
+          type: web
+          name: sports-ecommerce-backend
+          property: url
