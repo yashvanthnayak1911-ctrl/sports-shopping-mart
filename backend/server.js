@@ -40,7 +40,11 @@ const PORT = process.env.PORT || 5000;
 
 // Basic route
 app.get('/', (req, res) => {
-  res.json({ message: 'Sports E-Commerce API is running' });
+  res.json({
+    message: 'Welcome to the Sports E-commerce API (Backend)',
+    status: 'Running',
+    timestamp: new Date().toISOString()
+  });
 });
 
 // Ping route for keep-alive
