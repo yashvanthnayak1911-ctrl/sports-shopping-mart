@@ -29,6 +29,8 @@ services:
         source: /*
         destination: /index.html
     envVars:
+      - key: CI
+        value: false
       - key: REACT_APP_API_BASE_URL
         fromService:
           type: web
