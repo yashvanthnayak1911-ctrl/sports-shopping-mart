@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -13,6 +13,28 @@ import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
 
 function App() {
+  // Keep-alive mechanism: Ping backend every 5 minutes
+  useEffect(() => {
+    const pingBackend = async () => {
+      try {
+        const backendUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+        // Remove /api suffix if present to hit the root or /ping
+        const baseUrl = backendUrl.replace('/api', '');
+        await fetch(`${baseUrl}/ping`);
+        console.log('Keep-alive ping sent');
+      } catch (error) {
+        console.error('Keep-alive ping failed:', error);
+      }
+    };
+
+    // Initial ping
+    pingBackend();
+
+    // Ping every 5 minutes
+    const interval = setInterval(pingBackend, 5 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   const [cart, setCart] = useState([]);
   const [user, setUser] = useState(localStorage.getItem('token') ? true : false);
   const [showToast, setShowToast] = useState(false);

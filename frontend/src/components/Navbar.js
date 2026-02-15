@@ -32,6 +32,9 @@ const Navbar = ({ cartCount = 0 }) => {
           <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem', fontWeight: 'bold', margin: '0' }}>
             SPORTSMART
           </Link>
+          <span style={{ fontSize: '0.8rem', color: '#888', marginLeft: '1rem' }}>
+            (Role: {localStorage.getItem('role') || 'none'})
+          </span>
         </div>
         <div style={{ display: 'flex', gap: '1rem' }}>
           <Link to="/" style={glassButtonStyle} onMouseEnter={(e) => {

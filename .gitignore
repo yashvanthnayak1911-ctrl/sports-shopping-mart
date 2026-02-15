@@ -4,3 +4,9 @@ node_modules
 dist
 build
 *.log
+backend/cleanup_test_user.js
+backend/test_register.js
+backend/make_admin.js
+backend/check_users.js
+backend/test_db_connect.js
+backend/test_local_mongo.js

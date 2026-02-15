@@ -106,3 +106,707 @@
   syscall: 'querySrv',
   hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
 }
+2026-02-01T16:46:51.181Z Server running on port 5000
+2026-02-01T16:46:51.181Z Access from other devices: http://192.168.1.8:5000
+2026-02-01T16:46:51.181Z Keep-alive mechanism initialized (14 min interval)
+2026-02-01T16:46:51.183Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-01T16:47:39.823Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:47:49.829Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:47:55.190Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:02.810Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:03.828Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:04.280Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:04.437Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:04.608Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:05.202Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:05.203Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-01T16:48:12.812Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:13.830Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:14.284Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:14.440Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:14.614Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:15.212Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-01T16:48:41.153Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: '(911) 308-8352',
+  password: '123456789'
+}
+2026-02-01T16:48:50.442Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: '(911) 308-8352',
+  password: '123456789'
+}
+2026-02-01T16:48:51.159Z Registration error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:27:16.546Z Server running on port 5000
+2026-02-03T08:27:16.547Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:27:16.547Z Keep-alive mechanism initialized (14 min interval)
+2026-02-03T08:27:16.551Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:29:20.800Z Server running on port 5000
+2026-02-03T08:29:20.801Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:29:20.802Z Keep-alive mechanism initialized (14 min interval)
+2026-02-03T08:29:20.808Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:30:50.348Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T08:31:00.069Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T08:31:00.360Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:31:10.078Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:32:12.040Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T08:32:22.052Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:32:44.568Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: '(911) 308-8352',
+  password: '1234567890'
+}
+2026-02-03T08:32:51.128Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: '(911) 308-8352',
+  password: '1234567890'
+}
+2026-02-03T08:32:54.570Z Registration error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:33:01.131Z Registration error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:33:58.846Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:33:59.084Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:34:16.657Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:34:16.663Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:43:56.752Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:44:31.127Z Server running on port 5000
+2026-02-03T08:44:31.128Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:44:31.129Z Keep-alive mechanism initialized
+2026-02-03T08:44:31.133Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:44:51.999Z Server running on port 5000
+2026-02-03T08:44:51.999Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:44:52.000Z Keep-alive mechanism initialized
+2026-02-03T08:44:52.003Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:46:48.956Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: '(911) 308-8352',
+  password: 'yashthanu@191104'
+}
+2026-02-03T08:46:58.967Z Registration error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T08:47:59.745Z Server running on port 5000
+2026-02-03T08:47:59.746Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:47:59.747Z Keep-alive mechanism initialized
+2026-02-03T08:47:59.751Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:48:36.598Z Server running on port 5000
+2026-02-03T08:48:36.598Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:48:36.599Z Keep-alive mechanism initialized
+2026-02-03T08:48:42.768Z MongoDB connection error: Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.u27e8qb.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.u27e8qb.mongodb.net'
+}
+2026-02-03T08:49:29.910Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: 'yashvanthnayak331@gmail.com',
+  password: 'yashthanu@191104'
+}
+2026-02-03T08:49:29.919Z Registration error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:14:16
+2026-02-03T08:52:14.126Z Server running on port 5000
+2026-02-03T08:52:14.126Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:52:14.127Z Keep-alive mechanism initialized
+2026-02-03T08:52:44.131Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:567:9)
+    at process.processTimers (node:internal/timers:541:7) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-03T08:54:07.932Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T08:54:07.934Z Login error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:52:18
+2026-02-03T08:54:21.538Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: 'yashvanthnayak331@gmail.com',
+  password: 'yashthanu@191104'
+}
+2026-02-03T08:54:21.540Z Registration error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:14:16
+2026-02-03T08:55:20.030Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: 'yashvanthnayak331@gmail.com',
+  password: 'yashthanu@191104'
+}
+2026-02-03T08:55:20.032Z Registration error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:14:16
+2026-02-03T08:55:40.573Z Server running on port 5000
+2026-02-03T08:55:40.574Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T08:55:40.575Z Keep-alive mechanism initialized
+2026-02-03T08:56:10.579Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at runNextTicks (node:internal/process/task_queues:68:3)
+    at listOnTimeout (node:internal/timers:567:9)
+    at process.processTimers (node:internal/timers:541:7) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-03T08:57:05.940Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T08:57:05.943Z Login error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:52:18
+2026-02-03T08:59:33.231Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T08:59:33.233Z Login error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:52:18
+2026-02-03T09:05:26.287Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T09:05:26.289Z Login error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:52:18
+2026-02-03T09:07:27.290Z Server running on port 5000
+2026-02-03T09:07:27.291Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T09:07:27.292Z Keep-alive mechanism initialized
+2026-02-03T09:07:57.289Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-03T09:08:44.894Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T09:08:44.902Z Login error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:52:18
+2026-02-03T09:16:11.437Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T09:16:11.439Z Login error: MongooseError: Cannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
+    at NativeCollection.<computed> [as findOne] (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:235:15)
+    at model.Query._findOne (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:2548:49)
+    at model.Query.exec (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async C:\Users\yashv\OneDrive\Desktop\sports website\backend\routes\auth.js:52:18
+2026-02-03T09:16:27.347Z Server running on port 5000
+2026-02-03T09:16:27.348Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T09:16:27.348Z Keep-alive mechanism initialized
+2026-02-03T09:16:32.833Z Server running on port 5000
+2026-02-03T09:16:32.834Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T09:16:32.835Z Keep-alive mechanism initialized
+2026-02-03T09:16:37.367Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T09:16:45.063Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-03T09:16:47.378Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T09:16:55.079Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-03T09:17:02.834Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-03T09:17:05.715Z Server running on port 5000
+2026-02-03T09:17:05.716Z Access from other devices: http://192.168.1.8:5000
+2026-02-03T09:17:05.716Z Keep-alive mechanism initialized
+2026-02-15T14:36:53.906Z Server running on port 5000
+2026-02-15T14:36:53.907Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T14:36:53.907Z Keep-alive mechanism initialized
+2026-02-15T14:37:23.914Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:567:9)
+    at process.processTimers (node:internal/timers:541:7) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T14:41:58.443Z Server running on port 5000
+2026-02-15T14:41:58.443Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T14:41:58.444Z Keep-alive mechanism initialized
+2026-02-15T14:42:28.441Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T14:53:17.272Z Server running on port 5000
+2026-02-15T14:53:17.273Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T14:53:17.274Z Keep-alive mechanism initialized
+2026-02-15T14:53:47.273Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T14:57:26.301Z Server running on port 5000
+2026-02-15T14:57:26.302Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T14:57:26.302Z Keep-alive mechanism initialized
+2026-02-15T14:57:56.302Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T15:16:39.219Z Server running on port 5000
+2026-02-15T15:16:39.221Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T15:16:39.221Z Keep-alive mechanism initialized
+2026-02-15T15:17:09.219Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T16:49:36.425Z Server running on port 5000
+2026-02-15T16:49:36.425Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T16:49:36.426Z Keep-alive mechanism initialized
+2026-02-15T16:50:06.424Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T16:51:08.387Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-15T16:51:18.405Z Login error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-15T16:51:32.496Z Register request body: {
+  name: 'yashvanth s',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: 'yashvanthnayak331@gmail.com',
+  password: 'yashthanu@191104'
+}
+2026-02-15T16:51:42.508Z Registration error: MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+2026-02-15T16:52:51.296Z Server running on port 5000
+2026-02-15T16:52:51.297Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T16:52:51.298Z Keep-alive mechanism initialized
+2026-02-15T16:53:21.305Z MongoDB connection error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:816:11)
+    at NativeConnection.openUri (C:\Users\yashv\OneDrive\Desktop\sports website\backend\node_modules\mongoose\lib\connection.js:791:11)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:567:9)
+    at process.processTimers (node:internal/timers:541:7) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'cluster0-shard-00-00.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-01.u27e8qb.mongodb.net:27017' => [ServerDescription],
+      'cluster0-shard-00-02.u27e8qb.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-u27e8qb-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+2026-02-15T16:54:47.668Z Server running on port 5000
+2026-02-15T16:54:47.669Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T16:54:47.669Z Keep-alive mechanism initialized
+2026-02-15T16:54:47.682Z MongoDB connected successfully
+2026-02-15T16:55:45.185Z Register request body: {
+  name: 'yash',
+  email: 'yashvanthnayak1911@gmail.com',
+  mobile: '+919113088352',
+  password: 'yashthanu'
+}
+2026-02-15T16:55:45.262Z User found: {
+  _id: new ObjectId("697ef9fed9db52d58ff214ce"),
+  name: 'YASHVANTH NAYAK S',
+  email: 'yashvanthnayak1911@gmail.com',
+  password: '$2a$10$SdoBmLHF/UnbWxYqTcFXSO1GFzm24WeuIZWjbxgtSen/z18Kxo8Wm',
+  role: 'user',
+  createdAt: 2026-02-01T07:00:14.349Z,
+  __v: 0
+}
+2026-02-15T16:55:53.566Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-15T16:55:53.717Z Login successful for: yashvanthnayak331@gmail.com
+2026-02-15T16:56:29.386Z Login attempt for: yashvanthnayak331@gmail.com
+2026-02-15T16:56:29.522Z Login successful for: yashvanthnayak331@gmail.com
+2026-02-15T17:04:39.698Z Server running on port 5000
+2026-02-15T17:04:39.699Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T17:04:39.700Z Keep-alive mechanism initialized
+2026-02-15T17:04:39.729Z MongoDB connected successfully
+2026-02-15T17:05:34.679Z Login attempt for: yashvanthnayak1911@gmail.com
+2026-02-15T17:05:34.824Z Login failed: Invalid password for user: yashvanthnayak1911@gmail.com
+2026-02-15T17:05:43.395Z Login attempt for: yashvanthnayak1911@gmail.com
+2026-02-15T17:05:43.541Z Login successful for: yashvanthnayak1911@gmail.com
+2026-02-15T17:25:49.767Z Server running on port 5000
+2026-02-15T17:25:49.768Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T17:25:49.769Z Keep-alive mechanism initialized
+2026-02-15T17:25:49.790Z MongoDB connected successfully
+2026-02-15T17:26:05.764Z Register request body: {
+  name: 'Test Debugger',
+  email: 'debug@test.com',
+  password: 'password123',
+  mobile: '1234567890'
+}
+2026-02-15T17:26:05.778Z User found: null
+2026-02-15T17:26:05.945Z New user: {
+  name: 'Test Debugger',
+  email: 'debug@test.com',
+  mobile: '1234567890',
+  password: '$2a$10$rDUKcf/ildiFNInCOnW73.p5RhTmZCbgfYDABvmdGv7Pr/Ki2N9EG',
+  role: 'user',
+  _id: new ObjectId("699201ad1aec8d784c3fdd67"),
+  createdAt: 2026-02-15T17:26:05.943Z
+}
+2026-02-15T17:26:05.963Z User saved to database
+2026-02-15T17:26:12.844Z Register request body: {
+  name: 'yashhh',
+  email: 'yashvanthnayak331@gmail.com',
+  mobile: '9113088352',
+  password: 'yashthanu@191104'
+}
+2026-02-15T17:26:12.847Z User found: null
+2026-02-15T17:26:12.976Z New user: {
+  name: 'yashhh',
+  email: 'yashvanthnayak331@gmail.com',
+  mobile: '9113088352',
+  password: '$2a$10$fjd2NbHDXgtJ9Rj8tiW0feDp7Zr/0AKkf7JvgVdSizg7up9ZPtzz6',
+  role: 'user',
+  _id: new ObjectId("699201b41aec8d784c3fdd6a"),
+  createdAt: 2026-02-15T17:26:12.975Z
+}
+2026-02-15T17:26:12.980Z User saved to database
+2026-02-15T17:26:20.895Z Server running on port 5000
+2026-02-15T17:26:20.896Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T17:26:20.896Z Keep-alive mechanism initialized
+2026-02-15T17:26:20.917Z MongoDB connected successfully
+2026-02-15T17:28:11.544Z Server running on port 5000
+2026-02-15T17:28:11.546Z Access from other devices: http://192.168.1.8:5000
+2026-02-15T17:28:11.546Z Keep-alive mechanism initialized
+2026-02-15T17:28:11.567Z MongoDB connected successfully
+2026-02-15T17:29:03.560Z Creating product with data: {
+  name: 'boxing gloves',
+  description: 'premium sports boxing gloves',
+  price: 150,
+  category: 'gloves',
+  image: 'https://th.bing.com/th/id/OIP.YUdsynVlumzGqhS97TX-PwHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
+  stock: 20
+}
+2026-02-15T17:29:03.602Z Product saved: {
+  name: 'boxing gloves',
+  description: 'premium sports boxing gloves',
+  price: 150,
+  category: 'gloves',
+  image: 'https://th.bing.com/th/id/OIP.YUdsynVlumzGqhS97TX-PwHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3',
+  stock: 20,
+  rating: 0,
+  reviews: [],
+  _id: new ObjectId("6992025f270aa98bbf738282"),
+  createdAt: 2026-02-15T17:29:03.568Z,
+  updatedAt: 2026-02-15T17:29:03.568Z,
+  __v: 0
+}

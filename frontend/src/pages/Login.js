@@ -25,7 +25,8 @@ function Login({ setUser }) {
       localStorage.setItem('userId', response.data.user._id);
       localStorage.setItem('role', response.data.user.role || 'user');
       setUser(true);
-      navigate('/');
+      // Force reload to ensure Navbar updates with new role
+      window.location.href = '/';
     } catch (error) {
       console.error('Error logging in:', error.response?.data || error.message);
       alert(error.response?.data?.message || 'Invalid credentials');
@@ -55,7 +56,8 @@ function Login({ setUser }) {
       localStorage.setItem('userId', response.data.user._id);
       localStorage.setItem('role', response.data.user.role || 'user');
       setUser(true);
-      navigate('/');
+      // Force reload to ensure Navbar updates with new role
+      window.location.href = '/';
     } catch (error) {
       console.error('Error verifying OTP:', error.response?.data || error.message);
       alert(error.response?.data?.message || 'Invalid OTP');

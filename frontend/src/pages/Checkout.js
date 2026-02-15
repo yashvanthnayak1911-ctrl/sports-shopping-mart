@@ -25,6 +25,14 @@ function Checkout({ cart, user, setCart }) {
     setCart(cart.filter(item => item._id !== productId));
   };
 
+  const handleIncrease = (productId) => {
+    setCart(cart.map(item =>
+      item._id === productId
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
+    ));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!user) {
@@ -94,6 +102,26 @@ function Checkout({ cart, user, setCart }) {
                   -
                 </button>
                 <span>{item.quantity}x {item.name}</span>
+                <button
+                  onClick={() => handleIncrease(item._id)}
+                  style={{
+                    background: '#ff9800',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '50%',
+                    width: '20px',
+                    height: '20px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    fontWeight: 'bold',
+                    marginLeft: '0.5rem'
+                  }}
+                  title="Increase quantity"
+                >
+                  +
+                </button>
               </div>
               <span>${(item.price * item.quantity).toFixed(2)}</span>
             </div>
