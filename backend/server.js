@@ -57,7 +57,16 @@ mongoose.connect(process.env.MONGODB_URI)
 // Start server immediately (don't wait for DB, to allow debugging)
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
-  console.log(`Access from other devices: http://192.168.1.8:${PORT}`);
+
+  const { networkInterfaces } = require('os');
+  const nets = networkInterfaces();
+  for (const name of Object.keys(nets)) {
+    for (const net of nets[name]) {
+      if (net.family === 'IPv4' && !net.internal) {
+        console.log(`Access from other devices: http://${net.address}:${PORT}`);
+      }
+    }
+  }
 
   // Keep-alive mechanism
   const pingInterval = 14 * 60 * 1000; // 14 minutes

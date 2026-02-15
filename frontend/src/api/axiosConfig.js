@@ -1,16 +1,8 @@
 import axios from 'axios';
 
-// Set the base URL for all axios requests
-// Use env var for hosted API; fallback to dynamic local IP for dev
-const hostname = window.location.hostname;
-// Assume backend is on port 5000 if running locally
-const backendUrl = hostname === 'localhost' ? 'http://localhost:5000' : `http://${hostname}:5000`;
+// Use env var for hosted API (Render); otherwise empty string to use relative path (proxy)
+const apiBase = process.env.REACT_APP_API_BASE_URL || '';
 
-// If env var is just a hostname (from Render), prepend https://
-let apiBase = process.env.REACT_APP_API_BASE_URL || backendUrl;
-if (apiBase && !apiBase.startsWith('http')) {
-  apiBase = `https://${apiBase}`;
-}
 axios.defaults.baseURL = apiBase;
 
 // Add request interceptor to log requests and add auth token

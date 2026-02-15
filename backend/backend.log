@@ -810,3 +810,8 @@
   updatedAt: 2026-02-15T17:29:03.568Z,
   __v: 0
 }
+2026-02-15T17:35:17.791Z Server running on port 5000
+2026-02-15T17:35:17.800Z Access from other devices: http://192.168.1.14:5000
+2026-02-15T17:35:17.800Z Keep-alive mechanism initialized
+2026-02-15T17:35:17.823Z MongoDB connected successfully
+2026-02-15T17:49:17.942Z Keep-alive ping successful to http://localhost:5000/ping: 2026-02-15T17:49:17.941Z
