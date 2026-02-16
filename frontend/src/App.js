@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import AdminPanel from './pages/AdminPanel';
 import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
+import Settings from './pages/Settings';
 
 function App() {
   // Keep-alive mechanism: Ping backend every 5 minutes
@@ -79,6 +80,7 @@ function App() {
         <Route path="/admin" element={<AdminPanel user={user} />} />
         <Route path="/checkout" element={<Checkout cart={cart} user={user} setCart={setCart} />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/settings" element={<Settings setUser={setUser} />} />
       </Routes>
       <Footer />
     </Router>

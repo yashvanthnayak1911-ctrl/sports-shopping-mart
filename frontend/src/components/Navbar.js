@@ -79,6 +79,13 @@ const Navbar = ({ cartCount = 0 }) => {
             e.target.style.background = 'rgba(255, 255, 255, 0.1)';
             e.target.style.transform = 'translateY(0)';
           }}>Register</Link>
+          <Link to="/settings" style={glassButtonStyle} onMouseEnter={(e) => {
+            e.target.style.background = 'rgba(255, 255, 255, 0.2)';
+            e.target.style.transform = 'translateY(-2px)';
+          }} onMouseLeave={(e) => {
+            e.target.style.background = 'rgba(255, 255, 255, 0.1)';
+            e.target.style.transform = 'translateY(0)';
+          }}>Settings</Link>
           {localStorage.getItem('role') === 'admin' && (
             <Link to="/admin" style={glassButtonStyle} onMouseEnter={(e) => {
               e.target.style.background = 'rgba(255, 255, 255, 0.2)';

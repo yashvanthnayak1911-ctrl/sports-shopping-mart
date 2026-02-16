@@ -895,3 +895,13 @@
 2026-02-16T09:34:43.273Z Access from other devices: http://10.31.3.35:5000
 2026-02-16T09:34:43.274Z Keep-alive mechanism initialized
 2026-02-16T09:34:43.281Z MongoDB connected successfully
+2026-02-16T09:45:03.869Z Server running on port 5000
+2026-02-16T09:45:03.873Z Access from other devices: http://10.31.3.40:5000
+2026-02-16T09:45:03.873Z Access from other devices: http://10.31.3.35:5000
+2026-02-16T09:45:03.873Z Keep-alive mechanism initialized
+2026-02-16T09:45:03.886Z MongoDB connected successfully
+2026-02-16T09:52:34.252Z Server running on port 5000
+2026-02-16T09:52:34.256Z Access from other devices: http://10.31.3.40:5000
+2026-02-16T09:52:34.256Z Access from other devices: http://10.31.3.35:5000
+2026-02-16T09:52:34.257Z Keep-alive mechanism initialized
+2026-02-16T09:52:34.269Z MongoDB connected successfully

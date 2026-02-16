@@ -171,4 +171,27 @@ router.post('/login-otp', async (req, res) => {
   }
 });
 
+// Update user profile
+router.put('/update', async (req, res) => {
+  try {
+    const token = req.headers.authorization?.split(' ')[1] || req.headers.authorization;
+    if (!token) return res.status(401).json({ message: 'No token provided' });
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const { name, mobile } = req.body;
+
+    const user = await User.findById(decoded.userId);
+    if (!user) return res.status(404).json({ message: 'User not found' });
+
+    if (name) user.name = name.trim();
+    if (mobile) user.mobile = mobile.trim();
+
+    await user.save();
+    res.json({ message: 'Profile updated', user });
+  } catch (err) {
+    console.error('Update profile error:', err);
+    res.status(500).json({ message: 'Error updating profile' });
+  }
+});
+
 module.exports = router;
