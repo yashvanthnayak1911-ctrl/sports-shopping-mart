@@ -59,8 +59,13 @@ router.post('/login', async (req, res) => {
     const identifier = email ? email.toLowerCase().trim() : '';
     const cleanPassword = password ? password.trim() : '';
 
+    // Customize login search to be case-insensitive
+    // This helps if the DB has "User@Example.com" but user types "user@example.com"
     const user = await User.findOne({
-      $or: [{ email: identifier }, { mobile: identifier }]
+      $or: [
+        { email: { $regex: new RegExp(`^${identifier}$`, 'i') } },
+        { mobile: identifier } // Mobile is usually numeric/exact strings
+      ]
     });
 
     if (!user) {
