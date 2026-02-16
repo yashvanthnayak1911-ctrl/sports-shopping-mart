@@ -17,6 +17,9 @@ function ProductList({ addToCart }) {
 
   useEffect(() => {
     fetchProducts();
+    // Auto-refresh every 5 seconds to show admin changes
+    const interval = setInterval(fetchProducts, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -54,7 +57,10 @@ function ProductList({ addToCart }) {
       setLoading(false);
     } catch (error) {
       console.error('Error fetching products:', error);
-      setError('Failed to load products. Please check your connection.');
+      // Only show error if we have no products yet
+      if (products.length === 0) {
+        setError('Failed to load products. Please check your connection.');
+      }
       setLoading(false);
     }
   };

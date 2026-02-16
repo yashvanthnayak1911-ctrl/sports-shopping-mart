@@ -168,7 +168,17 @@ function AdminPanel({ user }) {
 
   return (
     <div>
-      <h2>Admin Panel - {editingId ? 'Edit Product' : 'Add New Product'}</h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+        <h2>Admin Panel</h2>
+        <button
+          onClick={() => window.location.href = '/home'}
+          className="btn"
+          style={{ padding: '0.5rem 1rem', background: '#28a745' }}
+        >
+          View Live Shop
+        </button>
+      </div>
+      <h3>{editingId ? 'Edit Product' : 'Add New Product'}</h3>
       {error && <div style={{ color: 'red', padding: '1rem', marginBottom: '1rem', background: '#fee', borderRadius: '4px' }}>{error}</div>}
       <form onSubmit={handleSubmit} style={{ maxWidth: '500px' }}>
         <input
