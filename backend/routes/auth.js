@@ -10,23 +10,32 @@ router.post('/register', async (req, res) => {
     console.log('Register request body:', req.body);
     const { name, email, mobile, password } = req.body;
 
+    // Normalize inputs
+    const cleanEmail = email ? email.toLowerCase().trim() : '';
+    const cleanMobile = mobile ? mobile.trim() : '';
+    const cleanPassword = password ? password.trim() : ''; // Trim password to avoid copy-paste spaces
+
+    if (!cleanEmail || !cleanPassword) {
+      return res.status(400).json({ message: 'Email and password are required' });
+    }
+
     // Check if user exists
-    let user = await User.findOne({ email });
+    let user = await User.findOne({ email: cleanEmail });
     console.log('User found:', user);
     if (user) return res.status(400).json({ message: 'User already exists' });
 
     // Hash password
     const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
+    const hashedPassword = await bcrypt.hash(cleanPassword, salt);
 
     // Create user
     user = new User({
-      name,
-      email,
-      mobile,
+      name: name ? name.trim() : '',
+      email: cleanEmail,
+      mobile: cleanMobile,
       password: hashedPassword
     });
-    console.log('New user:', user);
+    console.log('New user created (sanitized):', user.email);
 
     await user.save();
     console.log('User saved to database');
@@ -46,8 +55,9 @@ router.post('/login', async (req, res) => {
     const { email, password } = req.body;
     console.log('Login attempt for:', email);
 
-    // Trim identifier to avoid whitespace issues
-    const identifier = email ? email.trim() : '';
+    // Normalize inputs
+    const identifier = email ? email.toLowerCase().trim() : '';
+    const cleanPassword = password ? password.trim() : '';
 
     const user = await User.findOne({
       $or: [{ email: identifier }, { mobile: identifier }]
@@ -58,9 +68,9 @@ router.post('/login', async (req, res) => {
       return res.status(400).json({ message: 'User not found' });
     }
 
-    const isPasswordValid = await bcrypt.compare(password, user.password);
+    const isPasswordValid = await bcrypt.compare(cleanPassword, user.password);
     if (!isPasswordValid) {
-      console.log('Login failed: Invalid password for user:', identifier);
+      console.log(`Login failed: Invalid password for user: ${identifier}. Input len: ${cleanPassword.length}`);
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 

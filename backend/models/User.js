@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
-  mobile: { type: String }, // Mobile number
+  name: { type: String, required: true, trim: true },
+  email: { type: String, required: true, unique: true, trim: true, lowercase: true },
+  mobile: { type: String, trim: true }, // Mobile number
   password: { type: String, required: true },
   otp: { type: String }, // Temporary OTP
   otpExpires: { type: Date }, // OTP Expiry
