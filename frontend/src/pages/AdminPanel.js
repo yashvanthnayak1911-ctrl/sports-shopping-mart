@@ -36,7 +36,7 @@ function AdminPanel({ user }) {
         }
       } catch (error) {
         console.error('Auth check failed:', error);
-        alert('Authentication failed. Please login again.');
+        // alert('Authentication failed. Please login again.'); // Removed to prevent annoying popups
         navigate('/login');
       }
     };
