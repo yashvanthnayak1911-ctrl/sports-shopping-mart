@@ -137,6 +137,12 @@ function ProductList({ addToCart }) {
         {filteredProducts.length === 0 ? (
           <div className="no-results">
             <p>No products found matching "{searchQuery}"</p>
+            {/* Hint for admin if database is empty */}
+            {products.length === 0 && !loading && (
+              <p style={{ fontSize: '0.9rem', color: '#888', marginTop: '1rem' }}>
+                (If you are the admin, go to <a href="/admin" style={{ color: '#ff9800' }}>Admin Panel</a> to add products)
+              </p>
+            )}
           </div>
         ) : (
           <div className="products-grid">

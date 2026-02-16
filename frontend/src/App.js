@@ -17,8 +17,9 @@ function App() {
   useEffect(() => {
     const pingBackend = async () => {
       try {
-        const backendUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
-        // Remove /api suffix if present to hit the root or /ping
+        // Use the same env var as axiosConfig
+        const backendUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+        // Remove /api suffix if present (though usually base url is just the host)
         const baseUrl = backendUrl.replace('/api', '');
         await fetch(`${baseUrl}/ping`);
         console.log('Keep-alive ping sent');
