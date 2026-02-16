@@ -29,7 +29,7 @@ const Navbar = ({ cartCount = 0 }) => {
     <nav style={{ background: 'linear-gradient(135deg, #000000 0%, #5d1313 100%)', padding: '1rem 2rem', color: 'white' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem', fontWeight: 'bold', margin: '0' }}>
+          <Link to="/home" style={{ color: 'white', textDecoration: 'none', fontSize: '1.5rem', fontWeight: 'bold', margin: '0' }}>
             SPORTSMART
           </Link>
           <span style={{ fontSize: '0.8rem', color: '#888', marginLeft: '1rem' }}>
@@ -37,7 +37,7 @@ const Navbar = ({ cartCount = 0 }) => {
           </span>
         </div>
         <div style={{ display: 'flex', gap: '1rem' }}>
-          <Link to="/" style={glassButtonStyle} onMouseEnter={(e) => {
+          <Link to="/home" style={glassButtonStyle} onMouseEnter={(e) => {
             e.target.style.background = 'rgba(135, 18, 18, 0.2)';
             e.target.style.transform = 'translateY(-2px)';
           }} onMouseLeave={(e) => {

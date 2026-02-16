@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
+import Welcome from './pages/Welcome';
 import ProductList from './pages/ProductList';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
@@ -71,16 +72,17 @@ function App() {
         onClose={() => setShowToast(false)}
       />
       <Routes>
-        <Route path="/" element={<ProductList addToCart={addToCart} />} />
-        <Route path="/category/:category" element={<ProductList addToCart={addToCart} />} />
-        <Route path="/product/:id" element={<ProductDetails addToCart={addToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
-        <Route path="/login" element={<Login setUser={setUser} />} />
-        <Route path="/register" element={<Register setUser={setUser} />} />
+        <Route path="/" element={user ? <Navigate to="/home" /> : <Welcome />} />
+        <Route path="/home" element={user ? <ProductList addToCart={addToCart} /> : <Navigate to="/" />} />
+        <Route path="/category/:category" element={user ? <ProductList addToCart={addToCart} /> : <Navigate to="/" />} />
+        <Route path="/product/:id" element={user ? <ProductDetails addToCart={addToCart} /> : <Navigate to="/" />} />
+        <Route path="/cart" element={user ? <Cart cart={cart} removeFromCart={removeFromCart} /> : <Navigate to="/" />} />
+        <Route path="/login" element={!user ? <Login setUser={setUser} /> : <Navigate to="/home" />} />
+        <Route path="/register" element={!user ? <Register setUser={setUser} /> : <Navigate to="/home" />} />
         <Route path="/admin" element={<AdminPanel user={user} />} />
-        <Route path="/checkout" element={<Checkout cart={cart} user={user} setCart={setCart} />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/settings" element={<Settings setUser={setUser} />} />
+        <Route path="/checkout" element={user ? <Checkout cart={cart} user={user} setCart={setCart} /> : <Navigate to="/" />} />
+        <Route path="/orders" element={user ? <Orders /> : <Navigate to="/" />} />
+        <Route path="/settings" element={user ? <Settings setUser={setUser} /> : <Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>
