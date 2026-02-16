@@ -178,88 +178,122 @@ function AdminPanel({ user }) {
           View Live Shop
         </button>
       </div>
-      <h3>{editingId ? 'Edit Product' : 'Add New Product'}</h3>
-      {error && <div style={{ color: 'red', padding: '1rem', marginBottom: '1rem', background: '#fee', borderRadius: '4px' }}>{error}</div>}
-      <form onSubmit={handleSubmit} style={{ maxWidth: '500px' }}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Product Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
-        />
-        <textarea
-          name="description"
-          placeholder="Product Description"
-          value={formData.description}
-          onChange={handleChange}
-          required
-          style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem', minHeight: '100px' }}
-        />
-        <input
-          type="number"
-          name="price"
-          placeholder="Price"
-          value={formData.price}
-          onChange={handleChange}
-          required
-          style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
-        />
-        <input
-          type="text"
-          name="category"
-          placeholder="Category"
-          value={formData.category}
-          onChange={handleChange}
-          required
-          style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
-        />
-        <input
-          type="text"
-          name="image"
-          placeholder="Image URL (required)"
-          value={formData.image}
-          onChange={handleChange}
-          required
-          style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
-        />
-        {formData.image && (
-          <div style={{ marginBottom: '1rem', padding: '1rem', background: '#f5f5f5', borderRadius: '8px' }}>
-            <p style={{ fontSize: '0.9rem', color: '#666', margin: '0 0 0.5rem 0' }}>Image Preview:</p>
-            <img
-              src={formData.image}
-              alt="preview"
-              style={{ maxWidth: '100%', maxHeight: '150px', borderRadius: '4px' }}
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'block';
-              }}
+      <div style={{ marginBottom: '2rem', display: 'flex', gap: '1rem' }}>
+        <button
+          onClick={() => {
+            setEditingId(null);
+            setFormData({
+              name: '',
+              description: '',
+              price: '',
+              category: '',
+              image: '',
+              stock: ''
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="btn"
+          style={{ padding: '0.8rem 1.5rem', background: '#007bff', fontSize: '1rem' }}
+        >
+          + Add New Product
+        </button>
+      </div>
+
+      <div style={{
+        background: 'rgba(255, 255, 255, 0.1)',
+        backdropFilter: 'blur(10px)',
+        padding: '2rem',
+        borderRadius: '15px',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        marginBottom: '3rem'
+      }}>
+        <h3 style={{ marginTop: 0, marginBottom: '1.5rem', color: '#fff' }}>{editingId ? 'Edit Product' : 'Add New Product'}</h3>
+        {error && <div style={{ color: 'red', padding: '1rem', marginBottom: '1rem', background: '#fee', borderRadius: '4px' }}>{error}</div>}
+        <form onSubmit={handleSubmit} style={{ maxWidth: '100%' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Product Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              style={{ padding: '0.8rem', borderRadius: '8px', border: 'none', background: 'rgba(255,255,255,0.9)' }}
             />
-            <p style={{ color: 'red', display: 'none', margin: '0', fontSize: '0.9rem' }}>Invalid image URL</p>
+            <input
+              type="text"
+              name="category"
+              placeholder="Category"
+              value={formData.category}
+              onChange={handleChange}
+              required
+              style={{ padding: '0.8rem', borderRadius: '8px', border: 'none', background: 'rgba(255,255,255,0.9)' }}
+            />
           </div>
-        )}
-        <input
-          type="number"
-          name="stock"
-          placeholder="Stock Quantity"
-          value={formData.stock}
-          onChange={handleChange}
-          required
-          style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
-        />
-        <div style={{ display: 'flex', gap: '1rem' }}>
-          <button type="submit" className="btn">
-            {editingId ? 'Update Product' : 'Add Product'}
-          </button>
-          {editingId && (
-            <button type="button" onClick={handleCancelEdit} className="btn" style={{ background: '#dc3545' }}>
-              Cancel Edit
-            </button>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
+            <input
+              type="number"
+              name="price"
+              placeholder="Price"
+              value={formData.price}
+              onChange={handleChange}
+              required
+              style={{ padding: '0.8rem', borderRadius: '8px', border: 'none', background: 'rgba(255,255,255,0.9)' }}
+            />
+            <input
+              type="number"
+              name="stock"
+              placeholder="Stock Quantity"
+              value={formData.stock}
+              onChange={handleChange}
+              required
+              style={{ padding: '0.8rem', borderRadius: '8px', border: 'none', background: 'rgba(255,255,255,0.9)' }}
+            />
+          </div>
+          <input
+            type="text"
+            name="image"
+            placeholder="Image URL (required)"
+            value={formData.image}
+            onChange={handleChange}
+            required
+            style={{ width: '100%', padding: '0.8rem', marginTop: '1rem', borderRadius: '8px', border: 'none', background: 'rgba(255,255,255,0.9)', boxSizing: 'border-box' }}
+          />
+          <textarea
+            name="description"
+            placeholder="Product Description"
+            value={formData.description}
+            onChange={handleChange}
+            required
+            style={{ width: '100%', padding: '0.8rem', marginTop: '1rem', minHeight: '100px', borderRadius: '8px', border: 'none', background: 'rgba(255,255,255,0.9)', boxSizing: 'border-box' }}
+          />
+
+          {formData.image && (
+            <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,255,255,0.5)', borderRadius: '8px' }}>
+              <p style={{ fontSize: '0.9rem', color: '#333', margin: '0 0 0.5rem 0' }}>Image Preview:</p>
+              <img
+                src={formData.image}
+                alt="preview"
+                style={{ maxWidth: '100%', maxHeight: '150px', borderRadius: '4px' }}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
+            </div>
           )}
-        </div>
-      </form>
+
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
+            <button type="submit" className="btn" style={{ background: editingId ? '#ffc107' : '#28a745', color: editingId ? '#000' : '#fff', padding: '0.8rem 2rem' }}>
+              {editingId ? 'Update Product' : 'Add Product'}
+            </button>
+            {editingId && (
+              <button type="button" onClick={handleCancelEdit} className="btn" style={{ background: '#dc3545' }}>
+                Cancel Edit
+              </button>
+            )}
+          </div>
+        </form>
+      </div>
 
       <div style={{ marginTop: '3rem' }}>
         <h2>Manage Products</h2>
