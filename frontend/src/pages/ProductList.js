@@ -17,8 +17,8 @@ function ProductList({ addToCart }) {
 
   useEffect(() => {
     fetchProducts();
-    // Auto-refresh every 5 seconds to show admin changes
-    const interval = setInterval(fetchProducts, 5000);
+    // Auto-refresh every 2 seconds for faster updates
+    const interval = setInterval(fetchProducts, 2000);
     return () => clearInterval(interval);
   }, []);
 
