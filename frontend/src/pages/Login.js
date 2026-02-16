@@ -65,7 +65,7 @@ function Login({ setUser }) {
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '500px', margin: '0 auto', paddingBottom: '2rem' }}>
       <h2>{isOtpLogin ? 'Login with OTP' : 'Login'}</h2>
 
       {!isOtpLogin ? (

@@ -6,6 +6,7 @@ import { hapticFeedback } from '../utils/haptics';
 function ProductList({ addToCart }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [quantities, setQuantities] = useState({});
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -53,6 +54,7 @@ function ProductList({ addToCart }) {
       setLoading(false);
     } catch (error) {
       console.error('Error fetching products:', error);
+      setError('Failed to load products. Please check your connection.');
       setLoading(false);
     }
   };
@@ -89,6 +91,7 @@ function ProductList({ addToCart }) {
   };
 
   if (loading) return <div className="loading">Loading products...</div>;
+  if (error) return <div className="loading" style={{ color: 'red' }}>{error} <br /><button onClick={fetchProducts} className="btn" style={{ marginTop: '1rem', width: 'auto' }}>Retry</button></div>;
 
   return (
     <div>

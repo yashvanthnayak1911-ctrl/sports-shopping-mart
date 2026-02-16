@@ -33,7 +33,7 @@ function Register({ setUser }) {
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '500px', margin: '0 auto', paddingBottom: '2rem' }}>
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <input
