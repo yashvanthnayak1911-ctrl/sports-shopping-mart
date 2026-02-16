@@ -32,7 +32,16 @@ function Orders() {
 
     return (
         <div className="container" style={{ paddingTop: '2rem' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>My Orders</h2>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+                <h2 style={{ margin: 0 }}>My Orders</h2>
+                <button
+                    onClick={() => window.location.href = '/settings'}
+                    className="btn"
+                    style={{ padding: '0.5rem 1rem', fontSize: '0.9rem', background: 'rgba(255, 255, 255, 0.1)' }}
+                >
+                    Manage Profile / Settings
+                </button>
+            </div>
 
             {orders.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '2rem', background: '#1e1e1e', borderRadius: '8px' }}>

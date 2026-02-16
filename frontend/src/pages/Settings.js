@@ -63,7 +63,16 @@ function Settings({ setUser }) {
 
     return (
         <div className="container" style={{ maxWidth: '600px', padding: '2rem' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Account Settings</h2>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+                <h2 style={{ margin: 0 }}>Account Settings</h2>
+                <button
+                    onClick={() => navigate('/orders')}
+                    className="btn"
+                    style={{ padding: '0.5rem 1rem', fontSize: '0.9rem', background: 'rgba(255, 255, 255, 0.1)' }}
+                >
+                    View Orders
+                </button>
+            </div>
 
             {message && (
                 <div style={{
