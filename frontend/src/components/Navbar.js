@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ cartCount = 0 }) => {
+const Navbar = ({ cartCount = 0, user }) => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Navbar = ({ cartCount = 0 }) => {
               </span>
             )}
           </Link>
-          {localStorage.getItem('token') ? (
+          {user ? (
             <>
               <Link to="/orders" style={{ ...glassButtonStyle }} onMouseEnter={(e) => {
                 e.target.style.background = 'rgba(255, 255, 255, 0.2)';

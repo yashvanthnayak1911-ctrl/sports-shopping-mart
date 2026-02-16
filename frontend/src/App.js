@@ -65,7 +65,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
+      <Navbar cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} user={user} />
       <Toast
         message={toastMessage}
         show={showToast}
